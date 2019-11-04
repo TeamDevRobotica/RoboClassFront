@@ -50,10 +50,10 @@ export class DocentePage{
     this.contenidoservicio.getContenidos().subscribe(contenido=>{
       this.contenidos=contenido
     });
-    console.log(this.preguntas);
-    this.preguntaservicios.getPreguntas().subscribe(preguntas=>{
-      this.preguntas=preguntas
-    });
+    // console.log(this.preguntas);
+    // this.preguntaservicios.getPreguntas().subscribe(preguntas=>{
+    //   this.preguntas=preguntas
+    // });
   }
 
 

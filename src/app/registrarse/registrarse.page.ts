@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../servicios/auth.service';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
 import { LoginPage } from '../login/login.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registrarse',
@@ -25,14 +26,14 @@ export class RegistrarsePage {
    
   });
   navCtrl: any;
-  constructor(private fb: FormBuilder, private auth: AuthService) { }
+  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router) { }
 
   registrarse() {
     this.auth.agregarDocente(this.profileForm.value).subscribe(datos=>console.log(datos));
     // TODO: Use EventEmitter with form value
     console.warn(this.profileForm.value);
     this.profileForm.reset();
-    this.navCtrl.push(LoginPage);
+    this.router.navigate(['/login']);
   }
   
 }

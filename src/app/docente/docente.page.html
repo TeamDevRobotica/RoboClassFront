@@ -11,9 +11,11 @@
       <!-- <p>540034200</p> -->
     </ion-label> 
     </ion-item>
-    
+    <ion-button slot="end" style="margin-right: 50px;">
+        <ion-icon size="large" name="exit"></ion-icon>
+      </ion-button>
   </ion-toolbar>
-</ion-header>
+  </ion-header>
 
 <ion-content>
     <ion-grid>
@@ -29,7 +31,7 @@
               <!-- <ion-label color="primary" position="stacked">Título</ion-label> -->
               <ion-input
                 id="inputTitulo"
-                placeholder="Título del contenido" formControlName="titulo">
+                placeholder="Título" formControlName="titulo">
               </ion-input>
             </ion-item>
             <!-- <ion-item id="itemDescripcion"> -->
@@ -42,12 +44,12 @@
             </ion-input>
             </ion-item> -->
             <ion-text color="secondary">
-              <span>Contenido</span>
+              <!-- <span>Contenido</span> -->
             </ion-text>
             <ion-item id="textarea">
               <ion-textarea
                 id="contenidoInput"
-                placeholder="" formControlName="contenido"></ion-textarea>
+                placeholder="Contenido" formControlName="contenido"></ion-textarea>
             </ion-item>
           </ion-col>
         </ion-row>

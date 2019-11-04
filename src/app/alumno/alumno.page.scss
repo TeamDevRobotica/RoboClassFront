@@ -1,0 +1,62 @@
+.contenido {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: left;
+}
+
+.cardContent {
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.avatarCenter {
+  margin: 0 auto;
+}
+
+ion-avatar {
+  width: 90px;
+  height: 90px;
+}
+
+h5 {
+  margin-left: 15px;
+}
+
+.challengeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 121, 0.46262254901960786) 0%,
+    rgba(0, 212, 255, 0.773546918767507) 64%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ion-content{
+  // --ion-background-color:#00D1AB;
+  --ion-background-color:white;
+}

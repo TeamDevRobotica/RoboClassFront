@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="header">Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="profileForm" (ngSubmit)="registrarse()"> 
+     <!-- <ion-row>
+        <ion-col>
+          <h3>Usuario</h3>
+          <ion-item>
+          <ion-input type="text" name="usuario" formControlName="usuario"></ion-input>
+        </ion-item>
+        <h3>Clave</h3>
+          <ion-item>
+          <ion-input type="password" id="password" name="password" formControlName="clave"></ion-input>
+        </ion-item>
+        </ion-col>
+      </ion-row>  -->
+       <ion-row>
+        <ion-col>
+          <h3>Nombre</h3>
+          <ion-item>
+          <ion-input type="text" name="Nombre" formControlName="nombre" clearInput></ion-input>
+        </ion-item>
+        <h3>Apellido</h3>
+          <ion-item>
+          <ion-input type="text" id="password" name="Apellido" formControlName="apellido"></ion-input>
+        </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h3>DNI</h3>
+          <ion-item>
+          <ion-input type="number" name="Nombre" formControlName="dni"></ion-input>
+        </ion-item>
+        <h3>Mail</h3>
+          <ion-item>
+          <ion-input type="email" id="password" name="Apellido" formControlName="correo"></ion-input>
+        </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-list>
+        
+        <ion-item>
+          <ion-label>Perfil</ion-label>
+          <ion-select placeholder="Seleccione una Opción">
+            <ion-select-option value="Docente" >Docente</ion-select-option>
+            <ion-select-option value="Estudiante" >Estudiante</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+  
+      <div formGroupName="usuario">
+      <ion-row>
+        <ion-col>
+          <h3>Usuario</h3>
+          <ion-item>
+          <ion-input type="text" name="usuario" formControlName="usuario"></ion-input>
+        </ion-item>
+        <h3>Contraseña</h3>
+          <ion-item>
+          <ion-input type="password" id="password" name="pass" formControlName="clave"></ion-input>
+        </ion-item>
+        </ion-col>
+       </ion-row>
+    </div>
+      <ion-button type="submit" class="primary" style="float:right; margin-right: 1rem;" value="Registrarse" [disabled]="!profileForm.valid">Registrarse</ion-button>
+    </form>
+</ion-content> 
+

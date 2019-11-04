@@ -1,0 +1,25 @@
+ion-header{
+    --ion-background-color:#3880ff;
+  
+    // --ion-font-family: 'Permanent Marker', cursive;
+}
+
+ion-input{
+    --placeholder-opacity: #ffce00;
+    --placeholder-color: #3880ff;
+    --background:#f5f6f9;
+    border-bottom: solid 1px #3880ff;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 4px;
+}
+h3{
+    margin-left: 1rem;
+}
+ion-icon{
+    margin-right: 1rem;
+    color: #3880ff;
+}
+#header{
+    color: white;
+    
+}

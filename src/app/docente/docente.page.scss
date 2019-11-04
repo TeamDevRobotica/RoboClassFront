@@ -1,0 +1,78 @@
+ion-card{
+    background: black;
+    color: yellow;
+}
+ion-card-subtitle{
+    color: yellowgreen;
+}
+ion-card-title{
+    color: yellowgreen;
+    font-size: 26px;
+}
+ion-content{
+    // --ion-background-color:#00D1AB;
+    --ion-background-color:white;
+}
+ion-header{
+    --ion-background-color:#3880ff;
+    // --ion-font-family: 'Permanent Marker', cursive;
+}
+p{
+    color: white;
+}
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  // font-family: 'Anton', sans-serif;
+}
+h3{
+    color: black;
+}
+ion-avatar{
+    height: 70px;
+    width: 70px;
+}
+#contenidoInput {
+  resize: initial;
+  height: 100px;
+}
+
+#itemTitulo {
+  margin-bottom: 20px;
+  --background:#f5f6f9;
+  --border-style: transparent;
+  border-radius: 5px;
+
+}
+
+#itemDescripcion {
+  margin-bottom: 30px;
+  --background:#f5f6f9;
+  --border-style: transparent;
+  border-radius: 5px;
+}
+
+#textarea {
+  --highlight-color-focused: #3171e0;
+  margin-top: 10px;
+  --background:#f5f6f9;
+  --border-style: transparent;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+}
+
+#iconContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#radioPrivado {
+  display: flex;
+  flex-direction: column;
+}
+#inputTitulo{
+  --background:#f5f6f9;
+  --border-style: transparent;
+  border-radius: 5px;
+}

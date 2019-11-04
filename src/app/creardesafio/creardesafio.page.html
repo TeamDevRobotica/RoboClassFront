@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-item>
+    <ion-avatar size="large" slot="start">
+      <img src="https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+    </ion-avatar>
+    <ion-label>
+      <h3>Lorem ipsum</h3>
+      <p>XXXXX@gmail.com</p>
+      <p>DNI</p>
+      <p>CUE</p>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <form>
+      <ion-row style="margin-top:40px">
+        <ion-col>
+          <ion-item>
+            <ion-label>ASIGNAR UN CONTENIDO</ion-label>
+            <ion-select>
+              <ion-select-option>Alice in Chains</ion-select-option>
+              <ion-select-option>Green Day</ion-select-option>
+              <ion-select-option selected>Nirvana</ion-select-option>
+              <ion-select-option>Pearl Jam</ion-select-option>
+              <ion-select-option>Smashing Pumpkins</ion-select-option>
+              <ion-select-option>Soundgarden</ion-select-option>
+              <ion-select-option>Stone Temple Pilots</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row style="margin-top:20px">
+        <ion-col>
+          <ion-item id="itemPregunta">
+            <ion-label color="primary">1</ion-label>
+            <ion-input id="inputPregunta" placeholder="Pregunta"> </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="8" offset="1">
+          <ion-item lines="none">
+            <ion-input class="inputRespuesta" placeholder="Respuesta verdadera">
+            </ion-input>
+            <ion-radio slot="start" value="" id="radiov"></ion-radio>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input
+              class="inputRespuesta"
+              placeholder="Respuesta falsa"
+            ></ion-input>
+            <ion-radio slot="start" value="" class="radiof"></ion-radio>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input
+              class="inputRespuesta"
+              placeholder="Respuesta falsa"
+            ></ion-input>
+            <ion-radio slot="start" value="" class="radiof"></ion-radio>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col align-self-end>
+          <ion-button id="addPreguntas" fill="outline">
+            <ion-icon id="addIcon" name="add"></ion-icon>
+            <span style="color: #3171e0">AGREGAR OTRA PREGUNTA</span>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col align-self-end>
+          <ion-button style="float:right" type="submit"> PUBLICAR </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>

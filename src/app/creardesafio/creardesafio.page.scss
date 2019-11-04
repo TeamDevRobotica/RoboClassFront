@@ -1,0 +1,41 @@
+ion-content{
+    // --ion-background-color:#00D1AB;
+    --ion-background-color:white;
+    margin-top: 1rem;
+}
+ion-avatar{
+    height: 70px;
+    width: 70px;
+    // justify-content: center;
+    // margin-left: 4rem;
+}
+ 
+  #radiov {
+    --color: #28e070;
+    --color-checked: #0ec254;
+  }
+  
+  .radiof {
+    --color: #f04141;
+    --color-checked: #d33939;
+  }
+  
+  #addPreguntas {
+    display: flex;
+    justify-content: center;
+    --background: transparent;
+  }
+  
+  #addIcon {
+    color: #3171e0;
+  }
+  p{
+    color: white;
+}
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Anton', sans-serif;
+}
+h3{
+    color: white;
+}

@@ -1,5 +1,7 @@
 {
   "name": "robo1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

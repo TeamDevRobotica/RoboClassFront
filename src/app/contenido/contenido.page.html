@@ -1,0 +1,171 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title></ion-title>
+      <ion-button slot="start" style="margin-left: 50px;" [routerLink]="['/tabs/alumno']" routerLinkActive="router-link-active" >
+        <ion-icon size="large" name="exit"></ion-icon> volver
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <!-- <ion-row>
+        <ion-col size="10" offset="1" style="margin-top:40px;"> -->
+          <!-- <form> -->
+            <!-- <ion-item>
+              <ion-label>CURSOS</ion-label>
+              <ion-select value="brown" okText="Ok" cancelText="Cancelar">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>CONTENIDO</ion-label>
+              <ion-select value="brown" okText="Ok" cancelText="Cancelar">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-item> -->
+          <!-- </form> -->
+        <!-- </ion-col>
+      </ion-row> -->
+      <ion-row style="margin-top:1rem;">
+        <ion-col size="10" offset="1">
+          <h3 class="titleCont">
+            ROBORTICA EDUCATIVA
+          </h3>
+          <p class="parrafoCont">
+            La Robótica Educativa surge como herramienta novedosa e innovadora
+            introduciéndolas en la educación bien entrado el año 2000. Está
+            directamente relacionada con el Instituto de Tecnología de
+            Massachussets, donde crean una serie de dispositivos, con la
+            colaboración de la compañía Lego; y diseñan un lenguaje de
+            programación, Logo, que permitiría a los más pequeños relacionarse con
+            la construcción de máquinas y edificios.​ Los beneficios de esta forma
+            de jugar revertirían directamente en el proceso de aprendizaje de
+            niños. Pero el deseo que tiene el ser humano por crear máquinas
+            autómatas surge en la antigüedad, dando lugar a los autómatas,
+            aparatos que imitaban la apariencia y movimientos de un ser vivo.
+            Estas máquinas son el antecedente del robot.En el siglo I d. C., Herón
+            de Alejandría redactó el primer tratado sobre la robótica y creó los
+            primeros autómatas: el teodolito y el odómetro. Más adelante, en la
+            Edad Media, estos inventos continuaron. Podemos destacar a: Alberto
+            Magno (1206- 1280), quién creó un autómata de hierro que le servía
+            como mayordomo; y a Al-Jazarj que inventó un reloj elefante. Durante
+            el Renacimiento el gran interés del hombre en el campo de las ciencias
+            impulsó el desarrollo de la maquinaria, Leonardo Da Vinci (1452-1519)
+            creó la máquina de volar (ornitóptero). Fue en el año 1921 se
+            introduce el término “robot”, etimología de la palabra “robota” que en
+            el idioma checo significa “trabajo forzado”.En 1929 con la crisis
+            mundial, la sociedad comienza a criticar el avance tecnológico y el
+            sistema industrial.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-item
+        style="--background: transparent;  --border-color: #4c8dff; margin-top: 20px; margin-bottom: 0; height: 45px;"
+      >
+        <ion-icon
+          style="color:#383a3e;"
+          size="large"
+          slot="start"
+          name="arrow-dropdown"
+        ></ion-icon>
+        <ion-label class="titulosGral">DESAFÍOS</ion-label>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <div class="contenido">
+            <ion-card
+              style="box-shadow:none; width:150px;"
+              class="card ion-text-center"
+            >
+              <ion-card-header class="challengeContent ion-text-center">
+                <ion-card-subtitle class="challengeSub" style="color:white;"
+                  >CURSO</ion-card-subtitle
+                >
+                <p class="challengeText">
+                  TEMA
+                </p>
+              </ion-card-header>
+              <ion-card-content class="resultContent">
+                <ion-icon
+                  size="large"
+                  style="color:#0ec254;"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <h6>00</h6>
+                <ion-icon
+                  size="large"
+                  style="color:#f04141;"
+                  name="close-circle-outline"
+                ></ion-icon>
+                <h6>00</h6>
+              </ion-card-content>
+            </ion-card>
+            <ion-card
+              style="box-shadow:none; width:150px;"
+              class="card ion-text-center"
+            >
+              <ion-card-header class="challengeContent ion-text-center">
+                <ion-card-subtitle class="challengeSub" style="color:white;"
+                  >CURSO</ion-card-subtitle
+                >
+                <p class="challengeText">
+                  TEMA
+                </p>
+              </ion-card-header>
+              <ion-card-content class="resultContent">
+                <ion-icon
+                  size="large"
+                  style="color:#0ec254;"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <h6>00</h6>
+                <ion-icon
+                  size="large"
+                  style="color:#f04141;"
+                  name="close-circle-outline"
+                ></ion-icon>
+                <h6>00</h6>
+              </ion-card-content>
+            </ion-card>
+            <ion-card
+              style="box-shadow:none; width:150px;"
+              class="card ion-text-center"
+            >
+              <ion-card-header
+                class="challengeContent ion-text-center"
+                style="box-shadow:none; width:150px; height: 150px; color:white;"
+              >
+                <ion-card-subtitle class="challengeSub" style="color:white;"
+                  >CURSO</ion-card-subtitle
+                >
+                <p class="challengeText">
+                  TEMA
+                </p>
+              </ion-card-header>
+              <ion-card-content class="resultContent">
+                <ion-icon
+                  size="large"
+                  style="color:#0ec254;"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <h6>00</h6>
+                <ion-icon
+                  size="large"
+                  style="color:#f04141;"
+                  name="close-circle-outline"
+                ></ion-icon>
+                <h6>00</h6>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

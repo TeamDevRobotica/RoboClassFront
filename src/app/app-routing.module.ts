@@ -8,6 +8,9 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'perfil', loadChildren: './perfil/perfil.module#PerfilPageModule' },
   { path: 'registrarse', loadChildren: './registrarse/registrarse.module#RegistrarsePageModule' },
+  // { path: 'alumno', loadChildren: './alumno/alumno.module#AlumnoPageModule' },
+  { path: 'contenido', loadChildren: './contenido/contenido.module#ContenidoPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
   // { path: 'creardesafio', loadChildren: './creardesafio/creardesafio.module#CreardesafioPageModule' },
   
 

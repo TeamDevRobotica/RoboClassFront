@@ -1,26 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, RouterEvent } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { ModalController } from "@ionic/angular";
+import { ModalPage } from "../modal/modal.page";
 
 @Component({
-  selector: 'app-alumno',
-  templateUrl: './alumno.page.html',
-  styleUrls: ['./alumno.page.scss'],
+  selector: "app-alumno",
+  templateUrl: "./alumno.page.html",
+  styleUrls: ["./alumno.page.scss"]
 })
 export class AlumnoPage implements OnInit {
-  pages=[
-    {
-      title:'alumno',
-      url:'/menu/alumno',
-    }
-  ];
-  selectPath = '';
-  constructor(private router: Router) { 
-    this.router.events.subscribe((event: RouterEvent) => {
-    this.selectPath = event.url;
-   
-  });
-  }
-  ngOnInit() {
+  constructor(private modalcontroller: ModalController) {}
+
+  async OpenModal() {
+    const modal = await this.modalcontroller.create({ component: ModalPage });
+    return await modal.present();
   }
 
+  ngOnInit() {}
 }
